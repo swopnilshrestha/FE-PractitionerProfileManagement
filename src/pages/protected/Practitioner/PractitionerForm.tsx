@@ -80,8 +80,8 @@ const PractitionerForm = () => {
       if (response) {
         navigate(PROTECTED_ROUTE.PRACTITIONER_LIST);
       }
-    } catch (err) {
-      console.log(err);
+    } catch (error) {
+      console.log(error);
     }
   };
 
