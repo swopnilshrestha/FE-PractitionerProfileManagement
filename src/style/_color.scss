@@ -1,0 +1,109 @@
+// Default Color
+$white: #ffffff !default; //use
+$black: #000000 !default; //use
+
+// Base colors
+$primary-color: #111040 !default; //use
+$secondary-color: #297ffc !default; //use
+$error-color: #ef5350 !default;
+$warning-color: #f2c101 !default; //use
+$warning-alt-color: #ff9800 !default;
+$blue-grey: #9cb2bf !default;
+//$base-grey: #333333 !default;
+
+//Color Palette
+$colorMap: (
+  "white": (
+    "base": $white,
+  ),
+  "black": (
+    "base": $black,
+  ),
+  "primary": (
+    "base": $primary-color,
+    "base-dark": #12163c,
+    "dark": darken($primary-color, 10%),
+    "light": #100b43,
+    "text": $primary-color,
+  ),
+  "secondary": (
+    "base": $secondary-color,
+    "dark": darken($secondary-color, 10%),
+    "light": lighten($secondary-color, 10%),
+  ),
+  "tertiary-blue": (
+    "base": #297ffc,
+    "60": #2196f3,
+    "40": #29b6f6,
+    "20": #4fc3f7,
+    "5": #e6f0ff,
+    "light": #eaf3f9,
+    "lightest": #d1d5ea,
+  ),
+  "tertiary-red": (
+    "base": #ec5252,
+    "60": #f44336,
+    "40": #ef5350,
+    "20": #e57373,
+    "light": #fbdcdc,
+  ),
+  "tertiary-orange": (
+    "base": #f2813f,
+  ),
+  "tertiary-pink": (
+    "base": #f91dae,
+    "40": #fed2ef,
+  ),
+  "tertiary-green": (
+    "base": #00bfa0,
+    "60": #4caf50,
+    "40": #66bb6a,
+    "20": #81c784,
+    "1": #ccf2ec,
+    "2": #3cbf9f,
+    "3": #f2fffd,
+  ),
+  "tertiary-yellow": (
+    "base": #f2c101,
+    "60": #ffc107,
+    "40": #ffca28,
+    "20": #fcf3cc,
+  ),
+  "grey": (
+    "base": #f5f8fa,
+    "disabled": #e6ebee,
+    "disabled-color": rgba(#0b244d, 0.5),
+    "1": #f9f9f9,
+    "2": #b8c2c8,
+    "3": #959595,
+    "4": #979797,
+    "5": #767070,
+    "6": #534f5f,
+    "7": #12163c,
+    "8": #323232,
+    "9": #0d254c,
+    "10": #f6f6f6,
+    "11": #f2f2f2,
+    "12": #e6e6e6,
+    "13": #d2d2d2,
+    "14": #b2b2b2,
+    "15": #999999,
+    "16": #737373,
+    "17": #333333,
+    "18": #717295,
+    "19": #d9ddec,
+    "20": #d8d8d8,
+    "21": #cccccc,
+    "22": #4f5050,
+  ),
+);
+
+// @@ This color map is used for Buttons
+$theme-colors: (
+  "primary": $primary-color,
+  "secondary": $secondary-color,
+  "success": getColor("tertiary-green.base"),
+  "white": $white,
+  "danger": getColor("tertiary-red.base"),
+  "default": $white,
+);
