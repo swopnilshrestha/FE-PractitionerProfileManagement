@@ -66,3 +66,10 @@ export function getIdToken() {
 export function setIdToken(idToken: string) {
   return storage.set(ID_TOKEN, idToken);
 }
+
+/**
+ * Clear tokens.
+ */
+export function clear() {
+  storage.clear();
+}
